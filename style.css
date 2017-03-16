@@ -3,23 +3,55 @@
 body {
   font-family: 'Raleway', sans-serif;
   color: #555;
-  margin-left: 100px;
-  margin-top: 50px;
-  width: 50%;
+  margin: 50px auto;
+  width: 500px;
+  
+}
+.wrap{
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 15px;
+}
+h1 {
+    margin-bottom: 45px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 h2 {
   font-size: 1.3rem;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
 }
 
+label {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.input-wrap {
+    text-align: center;
+}
 footer {
   margin-top: 100px;
 }
-
+ol {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 35px;
+    padding: 10px 18px;
+    width: 100%;
+}
 ol li:nth-child(odd) {
   background: #DAE8F2;
 }
-
+p {
+    font-size: 12px;
+  }
 li {
   cursor: pointer;
 }
@@ -36,28 +68,50 @@ button {
   background: none;
   color: #555;
   border: 0px;
-  font-size: 16px;
-  margin: 10px 0 0;
+  font-size: 14px;
+  padding: 6px;
   cursor: pointer;
 }
 button:hover {
   color: #333;
 }
+#todoList li{
+  margin-bottom: 8px;
+  float: left;
+  width: 100%;
+  line-height: 33px;
+}
 
+#todoList li button {
+    display: inline-block;
+    float: right;
+    width: 50px;
+}
 input[type="text"] {
-  margin: 0;
-  font-size: 16px;
-  line-height: 20px;
+  background: #fff none repeat scroll 0 0;
   border: 1px solid #ddd;
-  background: #fff;
-  border-radius: 6px;
+  border-radius: 0;
   color: #888;
+  font-size: 16px;
+  line-height: 35px;
+  margin: 0 0 0 10px;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 input[type="text"]:focus {
   color: #333;
 }
-
+#addTodo{
+  background: #555;
+  padding: 0 10px;
+  line-height: 34px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  box-sizing: border-box;
+}
 .tddone{
   color: red;
   text-decoration: line-through;
